@@ -26,7 +26,14 @@ class RandomNumDataManager {
         numbers = currentNumbers
     }
 
+    func deleteNumber(at index: Int) {
+        var currentNumbers = numbers
+        currentNumbers.remove(at: index)
+        numbers = currentNumbers
+    }
+
     func fetchNumbers() -> [Int] {
         return numbers
     }
 }
+

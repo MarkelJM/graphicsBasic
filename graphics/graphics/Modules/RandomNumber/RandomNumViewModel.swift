@@ -10,22 +10,27 @@ import Combine
 
 class RandomNumViewModel: ObservableObject {
     @Published var currentNumber: Int?
-    @Published var allNumbers: [Int] = [] // Lista de todos los números generados
-
-    private var cancellables = Set<AnyCancellable>()
+    @Published var allNumbers: [Int] = []
 
     init() {
-        loadNumbers() // Cargar números al inicializar
+        loadNumbers()
     }
 
     func generateRandomNumber() {
         let number = Int.random(in: 0...100)
         currentNumber = number
         RandomNumDataManager.shared.save(number: number)
-        loadNumbers() // Recargar números después de guardar uno nuevo
+        loadNumbers()
     }
     
     func loadNumbers() {
         allNumbers = RandomNumDataManager.shared.fetchNumbers()
+    }
+
+    func deleteNumbers(at offsets: IndexSet) {
+        offsets.forEach { index in
+            RandomNumDataManager.shared.deleteNumber(at: index)
+        }
+        loadNumbers()
     }
 }

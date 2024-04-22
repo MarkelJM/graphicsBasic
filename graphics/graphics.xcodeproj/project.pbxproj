@@ -147,6 +147,7 @@
 		D361CF9C2BD653C200AE6B0C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D361CFA82BD6690000AE6B0C /* New Group */,
 				D361CF9E2BD653D600AE6B0C /* RandomNumber */,
 			);
 			path = Modules;
@@ -167,6 +168,13 @@
 				D361CFA52BD6541B00AE6B0C /* RandomNumView.swift */,
 			);
 			path = RandomNumber;
+			sourceTree = "<group>";
+		};
+		D361CFA82BD6690000AE6B0C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

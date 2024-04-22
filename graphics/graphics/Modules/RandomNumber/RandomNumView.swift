@@ -19,12 +19,18 @@ struct RandomNumberView: View {
                 Button("Generar número") {
                     viewModel.generateRandomNumber()
                 }
-                List(viewModel.allNumbers, id: \.self) { number in
-                    Text("\(number)")
+                List {
+                    ForEach(viewModel.allNumbers, id: \.self) { number in
+                        Text("\(number)")
+                    }
+                    .onDelete(perform: viewModel.deleteNumbers)
                 }
             }
             .navigationTitle("Generador de Números")
             .padding()
+            .toolbar {
+                EditButton()
+            }
         }
     }
 }
