@@ -26,6 +26,8 @@
 		D361CFAB2BD66CA900AE6B0C /* GraphsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361CFA92BD66CA900AE6B0C /* GraphsView.swift */; };
 		D361CFAE2BD66CD100AE6B0C /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361CFAD2BD66CD100AE6B0C /* TabBarView.swift */; };
 		D361CFAF2BD66CD100AE6B0C /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361CFAD2BD66CD100AE6B0C /* TabBarView.swift */; };
+		D361CFB22BD67CF000AE6B0C /* DesignTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361CFB12BD67CF000AE6B0C /* DesignTabBar.swift */; };
+		D361CFB32BD67CF000AE6B0C /* DesignTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361CFB12BD67CF000AE6B0C /* DesignTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,7 @@
 		D361CFA52BD6541B00AE6B0C /* RandomNumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumView.swift; sourceTree = "<group>"; };
 		D361CFA92BD66CA900AE6B0C /* GraphsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsView.swift; sourceTree = "<group>"; };
 		D361CFAD2BD66CD100AE6B0C /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		D361CFB12BD67CF000AE6B0C /* DesignTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,9 +191,26 @@
 		D361CFAC2BD66CBF00AE6B0C /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				D361CFB42BD67E8C00AE6B0C /* custom */,
+				D361CFB02BD67CCF00AE6B0C /* DesignTabBar */,
 				D361CFAD2BD66CD100AE6B0C /* TabBarView.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D361CFB02BD67CCF00AE6B0C /* DesignTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D361CFB12BD67CF000AE6B0C /* DesignTabBar.swift */,
+			);
+			path = DesignTabBar;
+			sourceTree = "<group>";
+		};
+		D361CFB42BD67E8C00AE6B0C /* custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D361CF772BD64F9600AE6B0C /* Persistence.swift in Sources */,
+				D361CFB22BD67CF000AE6B0C /* DesignTabBar.swift in Sources */,
 				D361CFAE2BD66CD100AE6B0C /* TabBarView.swift in Sources */,
 				D361CF702BD64F9400AE6B0C /* ContentView.swift in Sources */,
 				D361CF7A2BD64F9600AE6B0C /* graphics.xcdatamodeld in Sources */,
@@ -341,6 +362,7 @@
 			files = (
 				D361CF842BD64F9600AE6B0C /* graphicsTests.swift in Sources */,
 				D361CFA42BD6540D00AE6B0C /* RandomNumViewModel.swift in Sources */,
+				D361CFB32BD67CF000AE6B0C /* DesignTabBar.swift in Sources */,
 				D361CFAB2BD66CA900AE6B0C /* GraphsView.swift in Sources */,
 				D361CFA72BD6541B00AE6B0C /* RandomNumView.swift in Sources */,
 				D361CFAF2BD66CD100AE6B0C /* TabBarView.swift in Sources */,
