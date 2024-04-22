@@ -13,7 +13,7 @@ struct graphicsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RandomNumberView()
+            TabBarView()
             
             /*
             ContentView()

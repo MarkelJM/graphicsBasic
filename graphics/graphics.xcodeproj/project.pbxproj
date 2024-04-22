@@ -22,6 +22,10 @@
 		D361CFA42BD6540D00AE6B0C /* RandomNumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361CFA22BD6540D00AE6B0C /* RandomNumViewModel.swift */; };
 		D361CFA62BD6541B00AE6B0C /* RandomNumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361CFA52BD6541B00AE6B0C /* RandomNumView.swift */; };
 		D361CFA72BD6541B00AE6B0C /* RandomNumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361CFA52BD6541B00AE6B0C /* RandomNumView.swift */; };
+		D361CFAA2BD66CA900AE6B0C /* GraphsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361CFA92BD66CA900AE6B0C /* GraphsView.swift */; };
+		D361CFAB2BD66CA900AE6B0C /* GraphsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361CFA92BD66CA900AE6B0C /* GraphsView.swift */; };
+		D361CFAE2BD66CD100AE6B0C /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361CFAD2BD66CD100AE6B0C /* TabBarView.swift */; };
+		D361CFAF2BD66CD100AE6B0C /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361CFAD2BD66CD100AE6B0C /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,8 @@
 		D361CF9F2BD653FB00AE6B0C /* RandomNumDatamanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumDatamanager.swift; sourceTree = "<group>"; };
 		D361CFA22BD6540D00AE6B0C /* RandomNumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumViewModel.swift; sourceTree = "<group>"; };
 		D361CFA52BD6541B00AE6B0C /* RandomNumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumView.swift; sourceTree = "<group>"; };
+		D361CFA92BD66CA900AE6B0C /* GraphsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsView.swift; sourceTree = "<group>"; };
+		D361CFAD2BD66CD100AE6B0C /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +153,7 @@
 		D361CF9C2BD653C200AE6B0C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				D361CFA82BD6690000AE6B0C /* New Group */,
+				D361CFA82BD6690000AE6B0C /* Graphics */,
 				D361CF9E2BD653D600AE6B0C /* RandomNumber */,
 			);
 			path = Modules;
@@ -156,6 +162,7 @@
 		D361CF9D2BD653C900AE6B0C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D361CFAC2BD66CBF00AE6B0C /* TabBar */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -170,11 +177,20 @@
 			path = RandomNumber;
 			sourceTree = "<group>";
 		};
-		D361CFA82BD6690000AE6B0C /* New Group */ = {
+		D361CFA82BD6690000AE6B0C /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				D361CFA92BD66CA900AE6B0C /* GraphsView.swift */,
 			);
-			path = "New Group";
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		D361CFAC2BD66CBF00AE6B0C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D361CFAD2BD66CD100AE6B0C /* TabBarView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,8 +324,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D361CF772BD64F9600AE6B0C /* Persistence.swift in Sources */,
+				D361CFAE2BD66CD100AE6B0C /* TabBarView.swift in Sources */,
 				D361CF702BD64F9400AE6B0C /* ContentView.swift in Sources */,
 				D361CF7A2BD64F9600AE6B0C /* graphics.xcdatamodeld in Sources */,
+				D361CFAA2BD66CA900AE6B0C /* GraphsView.swift in Sources */,
 				D361CF6E2BD64F9400AE6B0C /* graphicsApp.swift in Sources */,
 				D361CFA62BD6541B00AE6B0C /* RandomNumView.swift in Sources */,
 				D361CFA32BD6540D00AE6B0C /* RandomNumViewModel.swift in Sources */,
@@ -323,7 +341,9 @@
 			files = (
 				D361CF842BD64F9600AE6B0C /* graphicsTests.swift in Sources */,
 				D361CFA42BD6540D00AE6B0C /* RandomNumViewModel.swift in Sources */,
+				D361CFAB2BD66CA900AE6B0C /* GraphsView.swift in Sources */,
 				D361CFA72BD6541B00AE6B0C /* RandomNumView.swift in Sources */,
+				D361CFAF2BD66CD100AE6B0C /* TabBarView.swift in Sources */,
 				D361CFA12BD653FB00AE6B0C /* RandomNumDatamanager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
