@@ -7,8 +7,8 @@
 
 import Foundation
 
-class RandomNumDatamanager {
-    static let shared = RandomNumDatamanager()
+class RandomNumDataManager {
+    static let shared = RandomNumDataManager()
 
     private let key = "savedNumbers"
     private var numbers: [Int] {

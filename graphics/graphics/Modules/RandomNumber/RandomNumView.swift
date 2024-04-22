@@ -7,12 +7,30 @@
 
 import SwiftUI
 
-struct RandomNumView: View {
+struct RandomNumberView: View {
+    @ObservedObject var viewModel = RandomNumViewModel()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                if let number = viewModel.currentNumber {
+                    Text("Número actual: \(number)")
+                }
+                Button("Generar número") {
+                    viewModel.generateRandomNumber()
+                }
+                List(viewModel.allNumbers, id: \.self) { number in
+                    Text("\(number)")
+                }
+            }
+            .navigationTitle("Generador de Números")
+            .padding()
+        }
     }
 }
 
+
+
 #Preview {
-    RandomNumView()
+    RandomNumberView()
 }

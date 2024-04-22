@@ -13,8 +13,12 @@ struct graphicsApp: App {
 
     var body: some Scene {
         WindowGroup {
+            RandomNumberView()
+            
+            /*
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+             */
         }
     }
 }
